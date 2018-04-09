@@ -1,0 +1,26 @@
+
+
+<!--Confirm Action Starts-->
+
+<section id="action">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Confirm Action</h4>
+                </div>
+                <div class="card-body">
+                    <div class="card-block">
+                      <input #search class="search mb-2" type="text" placeholder="Search..." (keydown.enter)="onSearch(search.value)">
+                      <ng2-smart-table [settings]="alertsettings" [source]="alertSource" (deleteConfirm)="onDeleteConfirm($event)" (editConfirm)="onSaveConfirm($event)"
+                       (createConfirm)="onCreateConfirm($event)"></ng2-smart-table>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Confirm Action Ends-->
