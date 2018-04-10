@@ -15,7 +15,7 @@ import { FullLayoutComponent } from "./layouts/full/full-layout.component";
 import { CustomOption } from "./shared/toastr/custom-option";
 
 import * as $ from 'jquery';
-
+import { UsersModule } from './Users/users.module';
 
 @NgModule({
     declarations: [
@@ -26,6 +26,7 @@ import * as $ from 'jquery';
 
     ],
     imports: [
+      UsersModule,
         BrowserAnimationsModule,
         AppRoutingModule,
         SharedModule,
